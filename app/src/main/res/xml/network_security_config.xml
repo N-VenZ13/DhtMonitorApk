@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- Ganti 192.168.38.157 dengan IP address Laravel Anda -->
+        <!-- Atau jika menggunakan emulator, tambahkan 10.0.2.2 -->
+        <domain includeSubdomains="true">192.168.38.157</domain>
+        <domain includeSubdomains="true">10.0.2.2</domain>
+    </domain-config>
+    <!-- Opsional: Mengizinkan cleartext secara global (kurang disarankan) -->
+    <!-- <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config> -->
+</network-security-config>
